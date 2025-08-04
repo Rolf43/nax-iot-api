@@ -21,7 +21,7 @@ connectDB();
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost', 'http://192.168.1.4'], // Asegúrate de que esta URL coincida con la del frontend
+    origin: ['*'], // Asegúrate de que esta URL coincida con la del frontend
   })); // Esto permitirá todas las solicitudes CORS, puedes configurarlo para restringirlo si es necesario.
 
 // Rutas
