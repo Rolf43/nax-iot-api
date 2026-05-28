@@ -53,7 +53,7 @@ exports.getData = async (req, res) => {
     const data = await Record.find({
       device: { $in: deviceIds },
     })
-      .sort({ createdAt: -1 });
+      .sort({ recordedAt: -1 });
       //.limit(10);
 
     res.json(data);
