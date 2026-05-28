@@ -55,7 +55,7 @@ exports.getData = async (req, res) => {
     })
       .sort({ recordedAt: -1 });
       //.limit(10);
-    console.log(data);
+    //console.log(data);
 
     res.json(data);
   } catch (err) {
